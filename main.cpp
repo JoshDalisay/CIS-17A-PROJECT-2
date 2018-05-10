@@ -1,5 +1,7 @@
 // CIS-17A Project 1
 
+// Names to be added
+
 #include <iostream>
 #include <iomanip>
 #include <cmath>
@@ -9,19 +11,19 @@
 
 using namespace std;
 
-int numScoopsValid(int);
-int numToppingsValid(int);
+int numScoopsValid(int);		//Function to check if the number of scoops is possible
+int numToppingsValid(int);		//Function to check if user input of toppings is an int
 
 int main() {
 
 	ifstream inputFile;
 
-	string iceHolder = "";
-	string chosenIceCream = "";
-	string toppingsString;
-	string reorderLoop;
-	string orderOrder[5]{ "1st", "2nd", "3rd", "4th", "5th" };
-	int numScoops = 0;
+	string iceHolder = "";			//What container for the ice cream the customer would want
+	string chosenIceCream = "";		//What flavour of ice cream the customer chose
+	string toppingsString;			//A check to see if the guest wants toppings
+	string reorderLoop;			//Used to loop the program if a guest wants to order again
+	string orderOrder[5]{ "1st", "2nd", "3rd", "4th", "5th" };		//Lists the orders made by the guest
+	int numScoops = 0;		//Value passed to the numScoopsVaild function
 	int numScoopsReturned;
 	int toppingsInput = 0;
 	int toppingsInputReturned;
